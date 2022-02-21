@@ -1,57 +1,39 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-size: 1em;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* usual class */
+
 .bold {
     font-weight: bold;
 }
-.space-top {
-    margin-top: 2em;
-}
-.contiguity-bottom {
-    margin-bottom: -0.5em;
-}
-.em {
-    font-size: 16pt;
-}
-footer {
-    width: 95%;
-    margin: auto;
-}
 
-.none {
-    color:#fffae8;
-    background-color: #fffae8;
-    border: none;
-}
-
-.unset
-.none:focus {
-    border: solid 1px #490000;
-    background-color: #fffae8;
-    color: #490000;
-    padding: 2px;
-
-}
-
-
-body {
-    color: #1c1c1e;
-    background-color: #fffae8;
-    margin: auto;
-}
-main {
-    width:85%;
-    margin: auto;
-}
-
-h1 {
-    font-size: 3.5em;
+.text-center {
     text-align: center;
 }
-h2 {
-    font-size: 2.75em;
-    font-weight: bold;
+
+.contiguity-top {
+    margin-top: -0.8em;
 }
-h3 .btn {
-    font-weight:initial;
-    font-size:1.25em;
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+.space-top {
+    margin-top: 2.5em;
 }
 
 .large {
@@ -59,41 +41,32 @@ h3 .btn {
     text-align: center;
 }
 
-kbd {
-    background-color: #e4dec3;
-    border: solid 1px black;
-    margin: 0 0.1em;
-    padding: 0.2em;
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-a {
-    color: #00417e;
-    font-weight: bold;
-    text-decoration:none;
+.margin-left-1 {
+    margin-left: 1em;
 }
-a:focus,
-a:hover,
-a:active {
-    color: #510086;
-    transition: all 0.3s;
+
+.hidden {
+    display:none;
 }
-.btn {
-    font-size: 1em;
-    background-color: #1c1c1e;
-    color: #fffae8;
-    border: solid 3px #ffc400;
-    padding: 0.1em 0.3em 0.2em 0.3em;
-    border-radius: 20px;
-}
-.btn:focus,
-.btn:hover,
-.btn:active {
-    background: #510086;
-    color: #ddecfc;
-    transition: all 0.3s;
-    border: none;
-    outline: none;
-    box-shadow: 0 0 0 3px #fffae8, 0 0 0 5px #00417e;
+
+/* fonts & accessibility */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -115,7 +88,7 @@ a:active {
     .btn {
         background-color: #ddecfc;
         color: #510086;
-        border: solid 1px #0084ff;
+        border: #0084ff;
     }
     
     .btn:focus,
@@ -123,14 +96,89 @@ a:active {
     .btn:active {
         background: #011c35;
         color: #fffae8;
-        box-shadow: 0 0 0 3px #fffae8, 0 0 0 5px #79beff;
-;
+        border: #011c35;
+        box-shadow: #79beff;
+
     }
     
     img {
     filter: grayscale(20%);
     }
 }
+
+/* design */
+
+body {
+    color: #1c1c1e;
+    background-color: #fffae8;
+    margin: auto;
+}
+main {
+    width:85%;
+    margin: auto;
+}
+
+footer {
+    width: 95%;
+    margin: auto;
+}
+
+a {
+    color: #00417e;
+    font-weight: bold;
+    text-decoration:none;
+}
+a:focus,
+a:hover {
+    color: #510086;
+    transition: all 0.3s;
+}
+.btn {
+    font-size: 1em;
+    background-color: #1c1c1e;
+    color: #fffae8;
+    border: solid 2px #ffc400;
+    padding: 0.1em 0.5em;
+    border-radius: 20px;
+}
+.btn:focus,
+.btn:hover,
+.btn:active {
+    background: #510086;
+    color: #ddecfc;
+    transition: all 0.5s;
+    border: solid 2px #fffae8;
+    outline: none;
+    box-shadow: 0 0 0 3px #00417e;
+}
+
+kbd {
+    background-color: #e4dec3;
+    border: solid 1px black;
+    padding: 0 0.2em;
+
+}
+.key {
+    margin-top: 0.1em;
+}
+
+/* game */ 
+
+.none {
+    color:#fffae8;
+    background-color: #fffae8;
+    border: none;
+}
+
+.unset
+.none:focus {
+    border: solid 1px #490000;
+    background-color: #fffae8;
+    color: #490000;
+    padding: 2px;
+}
+
+/* resonsive */
 
 @media screen and (max-width: 1024px) {
     main {
