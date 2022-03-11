@@ -69,43 +69,6 @@
     border: 0;
 }
 
-@media screen and (prefers-color-scheme: dark) {
-    body {
-    background-color: #1c1c1e;
-    color: #fffae8;
-    }
-    
-    a {
-    color: #b9ddff;
-    }
-    a:focus,
-    a:hover,
-    a:active {
-        color: #e1b8ff;
-        transition: all 0.3s;
-    }
-    
-    .btn {
-        background-color: #ddecfc;
-        color: #510086;
-        border: #0084ff;
-    }
-    
-    .btn:focus,
-    .btn:hover,
-    .btn:active {
-        background: #011c35;
-        color: #fffae8;
-        border: #011c35;
-        box-shadow: #79beff;
-
-    }
-    
-    img {
-    filter: grayscale(20%);
-    }
-}
-
 /* design */
 
 body {
@@ -177,6 +140,45 @@ kbd {
     color: #490000;
     padding: 2px;
 }
+
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+    background-color: #1c1c1e;
+    color: #fffae8;
+    }
+    
+    a {
+    color: #b9ddff;
+    }
+    a:focus,
+    a:hover,
+    a:active {
+        color: #e1b8ff;
+        transition: all 0.3s;
+    }
+    
+    .btn {
+        background-color: #ddecfc;
+        color: #510086;
+        border: #0084ff;
+    }
+    
+    .btn:focus,
+    .btn:hover,
+    .btn:active {
+        background: #011c35;
+        color: #fffae8;
+        border: #011c35;
+        box-shadow: #79beff;
+
+    }
+    
+    img {
+    filter: grayscale(20%);
+    }
+}
+
 
 /* resonsive */
 
