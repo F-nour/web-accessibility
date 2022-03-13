@@ -31,7 +31,7 @@ Tous ces logiciels doivent être en capacité de lire ce qui est affiché à l'�
 - [La déclaration d'accessibilité][7]
 - [La gestion des couleurs][8]
 
-[L'accessibilité HTML et CSS avec WAY-ARIA][9]
+[L'accessibilité HTML et CSS avec WAI-ARIA][9]
 - [L'utilisation des `roles`][10]
 - [L'utilisation des propriétés][11]
 
@@ -115,7 +115,7 @@ Il est également important de prévoir un lien __plan du site__, où l'arboresc
 Au moment de la conception de la maquette, il est utile de bien gérer les contrastes entre les différentes fonctionnalités de votre application. Pour vous aider, vous pouvez utiliser l'outil [Contrast Finder](https://app.contrast-finder.org/). Il est d'usage d'utiliser le ratio minimum de 4,5, pour favoriser un contraste correct. En dessous du ratio de contrast de 3, le contrast sera jugé insuffisant. 
 
 [9]: accessibility.md "html-css"
-## L'accessibilité HTML et CSS avec WAY-ARIA
+## L'accessibilité HTML et CSS avec WAI-ARIA
 
 [10]: accessibility.md "roles"
 ### L'utilisation des `roles`
@@ -131,7 +131,7 @@ Vous pouvez avoir plus d'informations sur l'utilisation des `role`sur le site de
 
 Vous aurez sans doute des WARNINGS dans le [valideur W3C](https://validator.w3.org/) car ce dernier ne prend pas tout à fait en compte l'accessibilité dans ses tests de validation. 
 
-[11]: accessibility.md "WAY-ARIA"
+[11]: accessibility.md "WAI-ARIA"
 ### L'utilisation des propriétés
 
 Il existe plusieurs balises de propriétés. 
