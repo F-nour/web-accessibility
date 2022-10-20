@@ -8,6 +8,14 @@
 	}
 }
 
+.navbar li {
+	list-style: none;
+}
+
+.navbar ul {
+	width: 100%;
+}
+
 .nav-accordion__bg,
 .nav-accordion__bg .accordion-button {
 	background-color: rgb(218, 213, 198) !important;
@@ -24,8 +32,13 @@
 	padding-left: 1em;
 }
 .active.nav-item,
-.nav-accordion__bg .accordion-button:not(.collapsed) {
+.nav-accordion__bg .accordion-button:not(.collapsed), .accordion-button {
 	background-color: rgb(223, 200, 130) !important;
 	color: initial;
 	font-weight: bold;
+	&:focus,
+	&:hover,
+	&:active {
+		color: #00004e;
+	}
 }

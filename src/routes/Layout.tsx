@@ -1,8 +1,7 @@
 import { Outlet } from "react-router-dom"
 import NavMenu from "../components/Nav"
 
-
-export default function App() {
+export default function Layout() {
     return (
         <>
             <NavMenu />

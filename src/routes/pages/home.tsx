@@ -1,8 +1,13 @@
-export default function Index() {
+import DocumentTitle from "react-document-title";
+import ScrollTop from "../../components/ScrollTop";
+
+const title = 'Web Accessibility'
+
+const Content = () => {
 	return (
 		<>
 			<section>
-				<h1 className='bold'>Web Accessibility</h1>
+				<h1 className='bold'>{title}</h1>
 			</section>
 			<section>
 				<div>
@@ -18,6 +23,7 @@ export default function Index() {
 						En effet, le numérique est un vrai accélérateur d'autonomie. Négliger l'accessibilité quand on est une entreprise oeuvrant dans le numérique, ou qu'on possède juste un site internet, même un site vitrine, c'est se couper de près de 10% de la population adulte en France, et donc d'une part de marché considérable.
 					</p>
 				</div>
+				<ScrollTop />
 			</section>
 			<section>
 				<div>
@@ -40,6 +46,7 @@ export default function Index() {
 						temps. N'hésitez pas à y revenir régulièrement &#128522;
 					</p>
 				</div>
+				<ScrollTop />
 			</section>
 			<section>
 				<div>
@@ -53,7 +60,17 @@ export default function Index() {
 						Au fur et à mesure, j'avancerai dans ce porjet en donnant d'autres tips d'accessibilités pour les différents handicaps.
 					</p>
 				</div>
+				<ScrollTop />
 			</section>
 		</>
 	);
+}
+
+export default function Home() {
+
+	return (
+		<DocumentTitle title={title}>
+			<Content />
+		</DocumentTitle>
+	)
 }
