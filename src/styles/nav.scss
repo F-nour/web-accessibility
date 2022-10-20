@@ -1,0 +1,31 @@
+.navbar {
+	width: 300px;
+	height: 100vh;
+	background-color: rgb(218, 213, 198) !important;
+	@media (max-width: 992px) {
+		width: inherit;
+		height: initial;
+	}
+}
+
+.nav-accordion__bg,
+.nav-accordion__bg .accordion-button {
+	background-color: rgb(218, 213, 198) !important;
+	border:none;
+}
+
+.navbar-collapse,
+.navbar-collapse div {
+	width: 100%;
+	align-items: flex-start;
+}
+
+.nav-item {
+	padding-left: 1em;
+}
+.active.nav-item,
+.nav-accordion__bg .accordion-button:not(.collapsed) {
+	background-color: rgb(223, 200, 130) !important;
+	color: initial;
+	font-weight: bold;
+}
