@@ -1,0 +1,12 @@
+$body-bg: rgb(237, 232, 215);
+$link-color: rgba(0, 65, 126, .6);
+$link-hover-color: rgb(81, 0, 134);
+$navbar-light-color: $link-color;
+$navbar-light-active-color: rgb(0, 65, 126);
+$navbar-light-disabled-color: rgba(0, 65, 126, .3);
+$navbar-light-hover-color: $link-hover-color;
+$accordion-color: $link-color;
+$accordion-button-active-color: $link-hover-color;
+
+
+@import "bootstrap/scss/bootstrap";

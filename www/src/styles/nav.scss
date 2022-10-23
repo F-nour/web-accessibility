@@ -1,3 +1,5 @@
+
+
 .navbar {
 	width: 300px;
 	height: 100vh;
@@ -31,14 +33,9 @@
 .nav-item {
 	padding-left: 1em;
 }
-.active.nav-item,
+.active.nav-link,
 .nav-accordion__bg .accordion-button:not(.collapsed), .accordion-button {
 	background-color: rgb(223, 200, 130) !important;
-	color: initial;
 	font-weight: bold;
-	&:focus,
-	&:hover,
-	&:active {
-		color: #00004e;
-	}
 }
+
