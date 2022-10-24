@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Build(): JSX.Element {
+export default function Accessibility(): JSX.Element {
     return (
         <>
             <section id="accessibility-page">
