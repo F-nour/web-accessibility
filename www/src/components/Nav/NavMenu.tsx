@@ -6,7 +6,6 @@ import { NavSection } from './NavSelect';
 import '../../styles/nav.scss';
 
 export default function NavMenu(): JSX.Element {
-	console.log(location.pathname)
 	return (
 		<>
 			<Navbar variant='light' expand='lg' fixed='top' className='flex-column'>
@@ -34,8 +33,6 @@ export default function NavMenu(): JSX.Element {
 							<NavSection
 								title={goodPractices.title}
 								path={goodPractices.path}
-								items={goodPractices.items}
-								names={goodPractices.names}
 								disabled
 							/>
 

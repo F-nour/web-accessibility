@@ -5,7 +5,7 @@ export const Home = {
 
 export const Accessibility = {
     path: 'accessibility',
-    title: "Qu'ext-ce que l'accessibilité"
+    title: "Qu'est-ce que l'accessibilité"
 }
 
 export const goodPractices = {
@@ -32,7 +32,7 @@ export const helpNavigation = {
     names: [
         'Les rôles et labels',
         'Les propriétés',
-        'La sémentique',
+        'La sémantique',
         'Les titres',
         'Les menus',
         'Les liens et boutons',
